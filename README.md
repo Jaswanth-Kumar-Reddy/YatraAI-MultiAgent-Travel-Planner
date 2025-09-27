@@ -1,6 +1,5 @@
 # 🚀 YatraAI - Smart Yatra Planning with AI
 
-## 🎉 **REAL DATA INTEGRATION ACHIEVED!**
 
 A sophisticated Multi-Agent AI travel planning system using **LangGraph**, **LLM integration**, and **real-time data** from free community APIs. Experience the future of intelligent yatra planning!
 
