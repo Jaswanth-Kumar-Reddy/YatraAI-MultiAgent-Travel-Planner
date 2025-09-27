@@ -1,0 +1,70 @@
+{
+  "demo_routes": [
+    {
+      "from": "New Delhi",
+      "to": "Mumbai",
+      "distance_km": 1400,
+      "modes": ["flight", "train"],
+      "sample_legs": [
+        {
+          "mode": "flight",
+          "from": "New Delhi Airport",
+          "to": "Mumbai Airport",
+          "duration_min": 140,
+          "price_inr": 4500
+        },
+        {
+          "mode": "train",
+          "from": "New Delhi Railway Station",
+          "to": "Mumbai Central",
+          "duration_min": 960,
+          "price_inr": 1800
+        }
+      ]
+    },
+    {
+      "from": "New Delhi",
+      "to": "Chandigarh",
+      "distance_km": 245,
+      "modes": ["bus", "train"],
+      "sample_legs": [
+        {
+          "mode": "bus",
+          "from": "New Delhi ISBT",
+          "to": "Chandigarh ISBT",
+          "duration_min": 300,
+          "price_inr": 400
+        },
+        {
+          "mode": "train",
+          "from": "New Delhi Railway Station",
+          "to": "Chandigarh Railway Station",
+          "duration_min": 240,
+          "price_inr": 350
+        }
+      ]
+    },
+    {
+      "from": "Mumbai",
+      "to": "Pune",
+      "distance_km": 150,
+      "modes": ["bus", "train"],
+      "sample_legs": [
+        {
+          "mode": "bus",
+          "from": "Mumbai Central Bus Stand",
+          "to": "Pune Bus Stand",
+          "duration_min": 180,
+          "price_inr": 300
+        },
+        {
+          "mode": "train",
+          "from": "Mumbai CST",
+          "to": "Pune Junction",
+          "duration_min": 210,
+          "price_inr": 250
+        }
+      ]
+    }
+  ]
+}

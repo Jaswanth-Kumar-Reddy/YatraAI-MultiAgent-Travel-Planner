@@ -1,0 +1,12 @@
+route_id,from_city,to_city,from_state,to_state,distance_km,duration_hours,base_fare,operator,departure_times,running_days,route_type
+KA001,Bangalore,Mysore,Karnataka,Karnataka,140,2.5,250,KSRTC,"05:00,06:30,08:00,09:30,11:00,12:30,14:00,15:30,17:00,18:30,20:00,21:30",1111111,intrastate
+KA002,Bangalore,Mangalore,Karnataka,Karnataka,350,6.0,620,KSRTC,"05:30,08:30,11:30,14:30,17:30,20:30",1111111,intrastate
+KA003,Bangalore,Hubli,Karnataka,Karnataka,410,7.0,720,KSRTC,"06:00,09:00,12:00,15:00,18:00,21:00",1111111,intrastate
+KA004,Bangalore,Belgaum,Karnataka,Karnataka,500,8.5,880,KSRTC,"05:45,08:45,11:45,14:45,17:45,20:45",1111111,intrastate
+KA005,Bangalore,Gulbarga,Karnataka,Karnataka,620,10.5,1080,KSRTC,"05:00,08:00,11:00,14:00,17:00,20:00",1111111,intrastate
+KA006,Mysore,Coorg,Karnataka,Karnataka,120,2.5,220,KSRTC,"06:00,08:00,10:00,12:00,14:00,16:00,18:00,20:00",1111111,intrastate
+KA007,Mysore,Ooty,Karnataka,Tamil Nadu,180,3.5,320,KSRTC,"05:30,07:30,09:30,11:30,13:30,15:30,17:30,19:30",1111111,interstate
+KA008,Mangalore,Udupi,Karnataka,Karnataka,60,1.2,110,KSRTC,"05:00,06:00,07:00,08:00,09:00,10:00,11:00,12:00,13:00,14:00,15:00,16:00,17:00,18:00,19:00,20:00,21:00,22:00",1111111,intrastate
+KA009,Hubli,Dharwad,Karnataka,Karnataka,20,0.5,40,KSRTC,"05:00,05:30,06:00,06:30,07:00,07:30,08:00,08:30,09:00,09:30,10:00,10:30,11:00,11:30,12:00,12:30,13:00,13:30,14:00,14:30,15:00,15:30,16:00,16:30,17:00,17:30,18:00,18:30,19:00,19:30,20:00,20:30,21:00,21:30,22:00,22:30",1111111,intrastate
+KA010,Bangalore,Tumkur,Karnataka,Karnataka,70,1.5,130,KSRTC,"05:30,06:30,07:30,08:30,09:30,10:30,11:30,12:30,13:30,14:30,15:30,16:30,17:30,18:30,19:30,20:30,21:30,22:30",1111111,intrastate
+

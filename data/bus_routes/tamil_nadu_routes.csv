@@ -1,0 +1,12 @@
+route_id,from_city,to_city,from_state,to_state,distance_km,duration_hours,base_fare,operator,departure_times,running_days,route_type
+TN001,Chennai,Coimbatore,Tamil Nadu,Tamil Nadu,500,8.0,850,TNSTC,"05:00,08:00,11:00,14:00,17:00,20:00",1111111,intrastate
+TN002,Chennai,Madurai,Tamil Nadu,Tamil Nadu,450,7.5,780,TNSTC,"05:30,08:30,11:30,14:30,17:30,20:30",1111111,intrastate
+TN003,Chennai,Trichy,Tamil Nadu,Tamil Nadu,320,5.5,580,TNSTC,"06:00,09:00,12:00,15:00,18:00,21:00",1111111,intrastate
+TN004,Chennai,Salem,Tamil Nadu,Tamil Nadu,340,5.5,600,TNSTC,"05:45,08:45,11:45,14:45,17:45,20:45",1111111,intrastate
+TN005,Chennai,Vellore,Tamil Nadu,Tamil Nadu,130,2.5,240,TNSTC,"05:00,06:00,07:00,08:00,09:00,10:00,11:00,12:00,13:00,14:00,15:00,16:00,17:00,18:00,19:00,20:00,21:00,22:00",1111111,intrastate
+TN006,Coimbatore,Madurai,Tamil Nadu,Tamil Nadu,200,3.5,360,TNSTC,"05:30,07:30,09:30,11:30,13:30,15:30,17:30,19:30,21:30",1111111,intrastate
+TN007,Coimbatore,Ooty,Tamil Nadu,Tamil Nadu,85,2.0,160,TNSTC,"06:00,08:00,10:00,12:00,14:00,16:00,18:00,20:00",1111111,intrastate
+TN008,Madurai,Rameswaram,Tamil Nadu,Tamil Nadu,170,3.0,300,TNSTC,"05:00,07:00,09:00,11:00,13:00,15:00,17:00,19:00",1111111,intrastate
+TN009,Trichy,Thanjavur,Tamil Nadu,Tamil Nadu,60,1.2,110,TNSTC,"05:00,06:00,07:00,08:00,09:00,10:00,11:00,12:00,13:00,14:00,15:00,16:00,17:00,18:00,19:00,20:00,21:00,22:00",1111111,intrastate
+TN010,Chennai,Pondicherry,Tamil Nadu,Puducherry,160,3.0,290,TNSTC,"05:30,07:30,09:30,11:30,13:30,15:30,17:30,19:30,21:30",1111111,interstate
+

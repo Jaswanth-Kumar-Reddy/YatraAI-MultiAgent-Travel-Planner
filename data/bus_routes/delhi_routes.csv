@@ -1,0 +1,12 @@
+route_id,from_city,to_city,from_state,to_state,distance_km,duration_hours,base_fare,operator,departure_times,running_days,route_type
+DL001,New Delhi,Gurgaon,Delhi,Haryana,30,1.0,80,Haryana Roadways,"05:00,06:00,07:00,08:00,09:00,10:00,11:00,12:00,13:00,14:00,15:00,16:00,17:00,18:00,19:00,20:00,21:00,22:00",1111111,intrastate
+DL002,New Delhi,Noida,Delhi,Uttar Pradesh,25,0.8,70,UPSRTC,"05:30,06:30,07:30,08:30,09:30,10:30,11:30,12:30,13:30,14:30,15:30,16:30,17:30,18:30,19:30,20:30,21:30,22:30",1111111,intrastate
+DL003,New Delhi,Faridabad,Delhi,Haryana,35,1.2,90,Haryana Roadways,"05:15,06:15,07:15,08:15,09:15,10:15,11:15,12:15,13:15,14:15,15:15,16:15,17:15,18:15,19:15,20:15,21:15,22:15",1111111,intrastate
+DL004,New Delhi,Ghaziabad,Delhi,Uttar Pradesh,20,0.7,60,UPSRTC,"05:45,06:45,07:45,08:45,09:45,10:45,11:45,12:45,13:45,14:45,15:45,16:45,17:45,18:45,19:45,20:45,21:45,22:45",1111111,intrastate
+DL005,New Delhi,Meerut,Delhi,Uttar Pradesh,80,1.5,150,UPSRTC,"06:00,08:00,10:00,12:00,14:00,16:00,18:00,20:00,22:00",1111111,intrastate
+DL006,New Delhi,Panipat,Delhi,Haryana,90,1.8,170,Haryana Roadways,"05:30,07:30,09:30,11:30,13:30,15:30,17:30,19:30,21:30",1111111,intrastate
+DL007,New Delhi,Rohtak,Delhi,Haryana,70,1.4,130,Haryana Roadways,"06:15,08:15,10:15,12:15,14:15,16:15,18:15,20:15,22:15",1111111,intrastate
+DL008,New Delhi,Alwar,Delhi,Rajasthan,150,2.5,280,RSRTC,"05:00,07:00,09:00,11:00,13:00,15:00,17:00,19:00,21:00",1111111,intrastate
+DL009,New Delhi,Mathura,Delhi,Uttar Pradesh,180,3.0,320,UPSRTC,"05:45,07:45,09:45,11:45,13:45,15:45,17:45,19:45,21:45",1111111,intrastate
+DL010,New Delhi,Vrindavan,Delhi,Uttar Pradesh,185,3.2,330,UPSRTC,"06:00,08:00,10:00,12:00,14:00,16:00,18:00,20:00,22:00",1111111,intrastate
+

@@ -1,0 +1,16 @@
+route_id,from_city,to_city,from_state,to_state,distance_km,duration_hours,base_fare,operator,departure_times,running_days,route_type
+BR001,New Delhi,Chandigarh,Delhi,Chandigarh,235,4.5,450,Delhi Transport Corporation,"06:00,10:00,14:00,18:00,22:00",1111111,interstate
+BR002,New Delhi,Jaipur,Delhi,Rajasthan,280,5.0,520,RSRTC,"05:30,09:30,13:30,17:30,21:30",1111111,interstate
+BR003,New Delhi,Agra,Delhi,Uttar Pradesh,200,4.0,380,UPSRTC,"06:15,10:15,14:15,18:15,22:15",1111111,interstate
+BR004,Mumbai,Pune,Maharashtra,Maharashtra,150,3.0,280,MSRTC,"05:00,08:00,11:00,14:00,17:00,20:00,23:00",1111111,intrastate
+BR005,Mumbai,Nashik,Maharashtra,Maharashtra,180,3.5,320,MSRTC,"06:00,09:00,12:00,15:00,18:00,21:00",1111111,intrastate
+BR006,Bangalore,Mysore,Karnataka,Karnataka,140,2.5,250,KSRTC,"05:30,08:30,11:30,14:30,17:30,20:30",1111111,intrastate
+BR007,Bangalore,Chennai,Karnataka,Tamil Nadu,350,6.0,650,TNSTC,"06:00,12:00,18:00",1111111,interstate
+BR008,Chennai,Coimbatore,Tamil Nadu,Tamil Nadu,500,8.0,850,TNSTC,"05:00,11:00,17:00",1111111,intrastate
+BR009,Hyderabad,Vijayawada,Telangana,Andhra Pradesh,280,5.0,520,APSRTC,"06:30,10:30,14:30,18:30,22:30",1111111,interstate
+BR010,Hyderabad,Warangal,Telangana,Telangana,150,3.0,280,TSRTC,"05:00,08:00,11:00,14:00,17:00,20:00",1111111,intrastate
+BR011,Kolkata,Durgapur,West Bengal,West Bengal,180,3.5,320,WBSTC,"06:00,09:00,12:00,15:00,18:00,21:00",1111111,intrastate
+BR012,Kolkata,Bhubaneswar,West Bengal,Odisha,450,7.5,780,OSRTC,"05:30,11:30,17:30",1111111,interstate
+BR013,Ahmedabad,Vadodara,Gujarat,Gujarat,110,2.0,200,GSRTC,"05:00,07:00,09:00,11:00,13:00,15:00,17:00,19:00,21:00",1111111,intrastate
+BR014,Ahmedabad,Surat,Gujarat,Gujarat,260,4.5,480,GSRTC,"06:00,10:00,14:00,18:00,22:00",1111111,intrastate
+BR015,Indore,Bhopal,Madhya Pradesh,Madhya Pradesh,190,3.5,350,MPSRTC,"05:30,08:30,11:30,14:30,17:30,20:30",1111111,intrastate
