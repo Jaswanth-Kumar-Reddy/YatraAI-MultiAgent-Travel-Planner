@@ -8,6 +8,7 @@ from langgraph.graph import StateGraph, END
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 from langchain_openai import ChatOpenAI
 from langchain_anthropic import ChatAnthropic
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import ChatPromptTemplate
 from pydantic import BaseModel, Field
 
@@ -40,8 +41,9 @@ class LLMConfig:
     def __init__(self):
         self.openai_api_key = os.getenv('OPENAI_API_KEY')
         self.anthropic_api_key = os.getenv('ANTHROPIC_API_KEY')
-        self.model_provider = os.getenv('LLM_PROVIDER', 'openai')  # 'openai' or 'anthropic'
-        self.model_name = os.getenv('LLM_MODEL', 'gpt-4o-mini')
+        self.google_api_key = os.getenv('GOOGLE_API_KEY')
+        self.model_provider = os.getenv('LLM_PROVIDER', 'google')  # 'openai', 'anthropic', or 'google'
+        self.model_name = os.getenv('LLM_MODEL', 'gemini-1.5-flash')
         self.debug_mode = str(os.getenv('DEBUG_MODE', 'false')).lower() == 'true'
     
     class _MockResponse:
@@ -125,17 +127,26 @@ class LLMConfig:
     
     def has_real_llm_config(self):
         """Check if real LLM configuration is available"""
-        return self.openai_api_key is not None or self.anthropic_api_key is not None
+        return (self.openai_api_key is not None or 
+                self.anthropic_api_key is not None or 
+                self.google_api_key is not None)
         
     def get_llm(self):
         """Get the configured LLM instance"""
-        if self.model_provider == 'anthropic' and self.anthropic_api_key:
+        if self.model_provider == 'google' and self.google_api_key:
+            return ChatGoogleGenerativeAI(
+                model=self.model_name,
+                google_api_key=self.google_api_key,
+                temperature=0.1,
+                convert_system_message_to_human=True  # Gemini compatibility
+            )
+        elif self.model_provider == 'anthropic' and self.anthropic_api_key:
             return ChatAnthropic(
                 model="claude-3-5-sonnet-20241022",
                 anthropic_api_key=self.anthropic_api_key,
                 temperature=0.1
             )
-        elif self.openai_api_key:
+        elif self.model_provider == 'openai' and self.openai_api_key:
             return ChatOpenAI(
                 model=self.model_name,
                 openai_api_key=self.openai_api_key,

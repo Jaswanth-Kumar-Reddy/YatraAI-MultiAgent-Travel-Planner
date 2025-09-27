@@ -36,17 +36,24 @@ curl -X POST http://127.0.0.1:5002/api/plan \
   -d '{"from":"New Delhi","to":"Mumbai","date":"2025-10-01","mode":"hybrid"}'
 ```
 
-### **4. Optional: Add Free API Keys**
+### **4. 🆓 Add FREE Google Gemini AI (Recommended!)**
 ```bash
 # Copy environment template
-cp .env.hybrid.example .env
+cp .env.example .env
 
-# Edit .env and add your free API keys:
+# Edit .env and add your FREE Google API key:
+# Get free key at: https://makersuite.google.com/app/apikey
+GOOGLE_API_KEY=your_google_api_key_here
+LLM_PROVIDER=google
+LLM_MODEL=gemini-1.5-flash
+```
+
+### **5. Optional: More Free API Keys**
+```bash
+# Additional free APIs (optional):
 # VARIFLIGHT_KEY=your_variflight_key      # 100 free calls
 # SERPAPI_KEY=your_serpapi_key            # 100 free searches  
 # AVIATIONSTACK_KEY=your_aviationstack_key # 1000 free requests
-# OPENAI_API_KEY=your_openai_key          # For LLM mode
-# ANTHROPIC_API_KEY=your_anthropic_key    # For LLM mode
 ```
 
 ## 🎯 **Available Modes**
@@ -55,7 +62,7 @@ cp .env.hybrid.example .env
 |------|-------------|--------------|----------|
 | `hybrid` | **🔄 Real Data** - Free APIs + Demo fallback | OpenSky + Railway MCP + Regional | **Best for real data demo** |
 | `static` | **📊 Demo** - Realistic demo data only | Static demo data | Offline demo/portfolio |
-| `llm` | **🧠 AI + Real Data** - LLM + Hybrid data | **Real APIs + AI planning** | **🏆 BEST EXPERIENCE** |
+| `llm` | **🧠 AI + Real Data** - Google Gemini (FREE!) + Hybrid data | **Real APIs + AI planning** | **🏆 BEST EXPERIENCE** |
 | `api` | **🔌 API** - Traditional API calls | API endpoints + fallbacks | API integration demo |
 | `auto` | **🤖 Smart** - LLM if keys, else Hybrid | **Auto: LLM+Real or Real only** | **Recommended for users** |
 
@@ -119,6 +126,36 @@ User Query → Hybrid Agents → Real APIs (try) → Demo Fallback
 - **🧠 LLM Agents**: IngestAgent, PlannerAgent, RankingAgent
 - **📊 Traditional Agents**: `agents.py` - Rule-based fallbacks
 - **🌐 Flask API**: `app.py` - RESTful interface
+
+## 🤖 **AI-Powered Features (Google Gemini)**
+
+### **🆓 FREE AI Integration**
+- **Google Gemini 1.5 Flash**: 15 requests/minute, 1500/day - completely FREE!
+- **No Credit Card Required**: Unlike OpenAI GPT-4 or Anthropic Claude
+- **Perfect for Students**: Learn AI without spending money
+
+### **🧠 Intelligent Planning**
+- **Smart Mode Selection**: AI analyzes distance, connectivity, and preferences
+- **Optimized Itineraries**: Multiple options with cost/time/comfort balancing  
+- **Preference-Based Ranking**: Detailed explanations for each recommendation
+- **Contextual Reasoning**: Understands Indian travel patterns and infrastructure
+
+### **📋 Example AI Response**
+```json
+{
+  "ranking_explanation": "Best balance of cost (₹1200) and time (8h 30m)",
+  "recommendations": ["Book early for better deals", "Consider window seat"],
+  "score": {
+    "cost": 0.85,
+    "time": 0.72, 
+    "comfort": 0.90,
+    "overall": 0.82
+  }
+}
+```
+
+### **🎯 Setup Guide**
+See [GEMINI_SETUP.md](GEMINI_SETUP.md) for detailed setup instructions.
 - **💾 Data Sources**: Free community APIs + intelligent fallbacks
 
 ## 🎉 **Success Metrics**

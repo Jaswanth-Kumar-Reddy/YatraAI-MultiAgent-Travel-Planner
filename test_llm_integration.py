@@ -64,6 +64,12 @@ def test_dependencies():
     except ImportError:
         print("⚠️  LangChain Anthropic integration not available")
     
+    try:
+        from langchain_google_genai import ChatGoogleGenerativeAI
+        print("✅ LangChain Google Gemini integration available")
+    except ImportError:
+        print("⚠️  LangChain Google Gemini integration not available")
+    
     return True
 
 def test_workflow_import():
